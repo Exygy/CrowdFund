@@ -1,0 +1,1 @@
+UPDATE `line_item_categories` SET  `title` =  'other' WHERE  `line_item_categories`.`id` =5 LIMIT 1 ;

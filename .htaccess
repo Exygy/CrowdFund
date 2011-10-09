@@ -1,0 +1,13 @@
+#AuthUserFile /home/eurekafu/htpasswd/alpha/basic
+#AuthName "Eureka Fund Alpha" 
+#AuthType Basic 
+#Require valid-user 
+
+#Action application/x-httpd-php5 /cgi-sys/php5
+#AddType application/x-httpd-php5 .php
+
+<IfModule mod_rewrite.c>
+   RewriteEngine on
+   RewriteRule    ^$ app/webroot/    [L]
+   RewriteRule    (.*) app/webroot/$1 [L]
+</IfModule>

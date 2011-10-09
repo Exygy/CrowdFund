@@ -1,0 +1,12 @@
+  <tr id="lineItem-<?=$lineItem['id']?>">
+   <td class="line-item"><?=$lineItem['title']?></td>
+   <td class="item-cost">$<?=number_format($lineItem['amount'], 2, '.', ',');?></td>
+   <td><?php echo $ajax->link( 
+			    'Delete', 
+			    array( 'controller' => 'lineItems', 'action' => 'delete', $lineItem['id']), 
+			    array( 'update' => 'lineItem-'.$lineItem['id'] )
+			); 
+			?>		
+			
+	</td>
+  </tr>

@@ -1,0 +1,341 @@
+/* 
+ wFORMS 2.0 Stylesheet - Campground Theme v3 (with tool-tip) - Aug. 2006
+ See http://www.formassembly.com/wForms
+ 
+ To be used along with wforms-jsonly.css
+ This stylesheet and the associated images are Copyright (c) 2005 Cedric Savarese (http://www.4213miles.com)	
+ and licensed under the Creative Commons Attribution-ShareAlike License (http://creativecommons.org/licenses/by-sa/2.0/) 
+*/
+ 
+form {
+}
+form a {
+	color: #0282e2;
+}
+
+/* Form Sections ======================================================================== */
+
+/* Fieldset  */
+fieldset {
+	margin: 20px 0;
+	padding: 15px 10px;
+	background-color:#FAFAFA;
+	border-left: 1px solid #bbb;
+	border-right: 1px solid #bbb;	
+	overflow: auto;
+}
+
+fieldset dl {
+	padding-left: 10px;
+
+}
+
+
+legend {
+	padding: 2px 5px;
+	color: #ff8601;
+	font-weight: bold;
+}
+/* Nested Fieldset  */
+fieldset fieldset  {
+	background-color:#FFF;
+	border: 1px solid #ccc;
+}
+fieldset fieldset legend {
+	font-size: 90%;
+}
+/* Inline Section */
+.inlineSection {
+	overflow: auto;
+	width: 100%;	
+}
+/* Grid Section */
+form table {
+	border-collapse: collapse;
+}
+form td {
+	padding: 0 4px;
+	border-left: 1px solid #DFDED2;
+	border-right: 1px solid #DFDED2;	
+}
+form th {
+	padding: 0 4px;
+}
+form .alternate-1 {
+	background-color:#E8F0E8;
+}
+form .alternate-1 td {
+	border-left: 1px solid #DFDED2;
+	border-right: 1px solid #DFDED2;	
+}
+
+/* Combo Label + Input Field =========================================================== */
+form .oneField {
+	margin: 6px 0;
+	display: block;
+	vertical-align: middle;
+}
+form .inlineSection .oneField {
+	margin-right: 2px;
+	white-space: nowrap;	
+	display: inline;
+}
+/* Ties together a label and its checkbox or radio */
+form .oneChoice {
+	white-space: nowrap; 	
+}
+
+/* Field Labels ======================================================================== */
+
+/* Base */
+label, form .label {	
+	color: #333;
+	margin: 0;
+}
+/* Text inputs / Select label */
+label.preField {
+	display: -moz-inline-box;
+	display: inline-block;	
+	margin: 0.6em 4px 0 0;
+	padding: 0 2px;
+	min-width: 7em;
+}
+/* Radio / Checkbox group label */
+form .label  {
+	display: block; 
+	margin: 0.6em 4px 0 0;
+	padding: 2px;
+}
+/* Individual Checkbox / Radio label */
+label.postField  {
+	margin: 0 4px 0 4px;
+	font-size: 110%; 
+}
+/* Label when inside an inline section */
+form .inlineSection .oneField .inlineLabel {
+	display: -moz-inline-box;
+	display: inline-block;	
+	margin: 0.6em 4px 0 0;
+	padding: 0 2px;
+	min-width: 7em;
+	white-space: normal;
+}
+
+/* Inputs ======================================================================== */
+
+textarea {
+	padding: 0;
+	vertical-align: top;
+	margin: 2px 2px 1px 0;
+}
+input {
+	font-size: 110%; 
+	margin: 0 2px 0 0;
+	padding: 2px 0;
+}
+select {
+	margin: 2px 2px 1px 0;
+	padding: 0;
+	font-size: 110%; 
+}
+.inlineSection .oneField select {
+	margin: 0 2px 1px 0 !important;
+}
+.gridSection select  {
+	margin: 0 !important;
+}
+
+/* Buttons ======================================================================= */
+
+form .actions {
+	margin: 20px 0 10px 0;	
+	padding: 10px 5px;
+	background-color: #F5F5F5;
+	border-top: 2px solid #339933;
+	text-align: right;
+}
+/* Submit button */
+form .primaryAction {
+}
+/* Cancel button */
+form .secondaryAction {
+	color: grey;
+}
+form .secondaryAction:hover {
+	color: black;
+}
+
+/* Form Builder Related Rules ===================================================== */
+
+/* Form or Fieldset instruction paragraph. */
+form .instructions {
+	margin: 0.25em 0;
+	padding: 3px;
+	background-color:#FFFFCC;
+}
+/* Asterisk on required fields */
+form .reqMark {
+	color: #F00;
+	padding: 0 4px;
+}
+/* wForms Related Rules ========================================================== */
+
+/* Field w/ a validation error */
+/*
+form .errFld {
+	padding: 1px;
+	border: 1px solid #F00;
+}
+*/
+
+form .errFld input {
+background: #fdd;
+}
+
+/* Styling for message associated with a validation error. */
+form .errMsg {	
+	color: #CC3333 !important;
+	display: inline;
+    margin-left: 150px;
+}
+/* Field-Hint with focus */
+form .field-hint {
+	position: absolute;
+	width: 180px;
+	z-index: 50;
+	background-image: url('img/hint_topborder.gif');
+	background-repeat: no-repeat;
+	background-position: left top;	
+	padding: 14px 0 0 0;
+	margin:  2px 0 0 10px;
+	color: #000;
+}
+form .field-hint div {
+	background-color: #fffbb8;
+	border-left: 1px solid #ffc20d;
+	border-right: 1px solid #ffc20d;
+	border-bottom: 1px solid #ffc20d;
+	padding: 4px
+}
+/* Field-Hint without focus */
+form .field-hint-inactive {
+	visibility: hidden;
+	position: absolute;
+}
+
+project-info .field-hint-inactive {
+	visibility: hidden;
+	position: absolute;
+}
+
+
+/* Repeat Behavior divs (when not set on a fieldset) */
+div.repeat {
+	margin: 3px 0;
+	padding-right: 6px;
+	border: 1px dotted #ddd;
+	background-color: #FFFFFF;
+}
+div.removeable {
+	margin: 3px 0;
+	padding-right: 6px;	
+	border: 1px dotted #ccc;
+	background-color: #F3F3F3;
+	
+}
+/* Links generated by the Repeat Behavior */
+form .duplicateLink {
+	line-height: 260%;
+	font-weight: bold;
+}
+form .removeLink {
+	line-height: 260%;
+}
+form td .duplicateLink, form td .removeLink  {
+	margin: 0;
+	line-height: 100%;
+}
+/* Switch Behavior Classes */
+.onstate-a,  .onstate-b,  .onstate-c,  .onstate-d,
+.onstate-e,  .onstate-f,  .onstate-g,  .onstate-h, 
+.onstate-i,  .onstate-j,  .onstate-k,  .onstate-l, 
+.onstate-m,  .onstate-n,  .onstate-o,  .onstate-p, 
+.onstate-q,  .onstate-r,  .onstate-s,  .onstate-t,
+.onstate-u,  .onstate-v,  .onstate-w,  .onstate-x,  
+.onstate-y,  .onstate-z,  .onstate-aa, .onstate-ab,
+.onstate-ac, .onstate-ad, .onstate-ae, .onstate-af,
+.onstate-ag, .onstate-ah, .onstate-ai, .onstate-aj,
+.onstate-ak, .onstate-al, .onstate-am, .onstate-an,
+.onstate-ao, .onstate-ap, .onstate-aq, .onstate-ar,
+.onstate-as, .onstate-at, .onstate-au, .onstate-av,
+.onstate-aw, .onstate-ax, .onstate-ay, .onstate-az {
+	display: block;
+}
+/* offstate classes for the Switch Behavior are in wforms-jsonly.css */
+
+
+ 
+/* IE6 BUG FIXES ==================================================================== */
+form {
+	height:expression('1%'); /* IE Pick-a-boo bug fix */
+}
+form fieldset {
+	position:expression('relative'); /* Fixes IE problem with fieldset+legend boundaries */
+	margin-top:expression('1em');
+	padding-top:expression('1.5em');
+	overflow: expression('visible');
+}
+form fieldset legend {
+	position: expression('absolute'); 
+	top: expression('-.5em'); /* Fixes IE problem with fieldset+legend boundaries */
+	left:expression('.5em');
+}
+form .inlineSection .oneField {
+	display: expression('inline-block');		
+}
+label, form .label {	
+	font-size: expression('90%');
+}
+label.preField, form .inlineSection .oneField .inlineLabel {
+	width: expression('7em');
+	white-space: expression('nowrap');
+}
+
+
+/* 
+ wFORMS Extension Stylesheet - formassembly.com					
+ Default Theme: March 2005										
+ To be used along with wforms.css
+ This stylesheet and the associated images are Copyright (c) 2005 Cdric Savarese (http://www.4213miles.com)	
+ and licensed under the Creative Commons Attribution-ShareAlike License (http://creativecommons.org/licenses/by-sa/2.0/) 
+*/
+
+/* Accessiblity Related Rules */
+/* These are the rules that should *not* apply if javascript is disabled. */
+/* see: http://formassembly.com/blog/?p=14 */
+
+.offstate-a, .offstate-b, .offstate-c, .offstate-d, 
+.offstate-e, .offstate-f, .offstate-g, .offstate-h, 
+.offstate-i, .offstate-j, .offstate-k, .offstate-l,
+.offstate-m, .offstate-n, .offstate-o, .offstate-p, 
+.offstate-q, .offstate-r, .offstate-s, .offstate-t,
+.offstate-u, .offstate-v, .offstate-w, .offstate-x,  
+.offstate-y, .offstate-z, .offstate-aa, .offstate-ab,
+.offstate-ac, .offstate-ad, .offstate-ae, .offstate-af,
+.offstate-ag, .offstate-ah, .offstate-ai, .offstate-aj,
+.offstate-ak, .offstate-al, .offstate-am, .offstate-an {
+	display: none !important;
+}
+
+.wfPage, .wfHideSubmit { 
+	display: none !important;
+}
+.wfCurrentPage {
+	display: block !important;
+}
+
+#rotator img {
+	display:none;
+	position:absolute;
+	top:0; left:0;
+}

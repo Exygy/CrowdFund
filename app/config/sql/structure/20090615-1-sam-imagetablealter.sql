@@ -1,0 +1,1 @@
+ALTER TABLE `images` ADD `active` INT NOT NULL DEFAULT '1';

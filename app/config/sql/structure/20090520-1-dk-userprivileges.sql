@@ -1,0 +1,1 @@
+ALTER TABLE `users` ADD `privileges` INT NOT NULL DEFAULT '0';
