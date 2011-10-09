@@ -1,0 +1,15 @@
+h1. CrowdFund
+
+By Exygy, LLC
+http://exygy.com
+
+CrowdFund is a simple, Open Source, Crowdsource funding platform. It is currently used to power EurekaFund.org.
+
+CrowdFund is built in CakePHP.
+
+It is built by Exygy in San Francisco. Please get in touch for any help customizing :) We are available for contract work.
+
+h2. License
+
+See LICENSE.
+
