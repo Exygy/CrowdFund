@@ -9,6 +9,14 @@ CrowdFund is built in CakePHP.
 
 It is built by Exygy in San Francisco. Please get in touch for any help customizing :) We are available for contract work.
 
+h2. Installation Instructions
+
+See the wiki page, here: https://github.com/Exygy/CrowdFund/wiki/Installation-Instructions
+
+h2. Known Issues
+
+See the wiki page, here: https://github.com/Exygy/CrowdFund/wiki/Known-Issues
+
 h2. License
 
 See LICENSE.
